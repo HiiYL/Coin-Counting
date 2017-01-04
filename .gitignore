@@ -1,0 +1,8 @@
+*.pkl
+*.zip
+dataset/
+__pycache__/
+crops/
+crops-backup/
+*.npy
+googlenet_weights.h5
