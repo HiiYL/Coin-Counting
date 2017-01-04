@@ -60,7 +60,7 @@ coin_type_lookup_table = { 0 : "old 5 sen",
 classifier = pickle.load(open('classifier_squeezenet.pkl','rb'))
 
 
-def processAndFindRegions(coin_num,image):
+def processAndFindRegions(coin_num,image, verbose=False, visualize=False):
     img = cv2.cvtColor( image, cv2.COLOR_RGB2GRAY )
     img = cv2.medianBlur(img,3)
 
@@ -89,6 +89,14 @@ def processAndFindRegions(coin_num,image):
 
         cv2.circle(modified_image,(i[0],i[1]),2,(0,0,255),3)
         total_value += value
+
+        if verbose:
+            print("Value of coin #{} of image #{} is [ {} - {} ] ".format(
+                label, coin_num, coin, coin_type_lookup_table[coin]))
+
+    if visualize:
+        cv2.imshow('detected circles',  modified_image)
+        cv2.waitKey(0)
 
     return total_value
 
