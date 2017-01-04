@@ -7,3 +7,5 @@ crops-backup/
 *.npy
 googlenet_weights.h5
 !classifier_squeezenet.pkl
+!coinset1.pkl
+!coinset2.pkl
