@@ -2,7 +2,11 @@
 Counting Malaysian coins using computer vision
 
 ## Architecture
+
+#### Overall Architecture
 <img width="645" alt="screen shot 2017-01-09 at 12 33 25 pm" src="https://cloud.githubusercontent.com/assets/7908951/21757335/e6c76ab6-d667-11e6-886c-d7119e83f6d2.png">
+
+#### Convolutional Neural Network ( Squeezenet )
 <img width="633" alt="screen shot 2017-01-09 at 12 33 29 pm" src="https://cloud.githubusercontent.com/assets/7908951/21757332/e67df07a-d667-11e6-8af3-bf3a3fc20ed0.png">
 
 ## Segmentation
